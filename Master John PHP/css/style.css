@@ -1,0 +1,18 @@
+body{
+	/*background-image: url("../img/pattern.jpg");*/
+	background-color: #FFAA01;
+}
+
+/*.FondoImagen{
+	background-image: url("../img/banner.png");	
+	background-repeat: no-repeat;
+	width: 100%;
+	margin: auto;
+	
+}*/
+
+.Aclonica{
+	font-family: "Aclonica";
+	color: white;
+}
+

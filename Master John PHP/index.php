@@ -11,13 +11,24 @@ if (isset($_GET["vista"])) {
 ?>
 <!DOCTYPE html>
 <html lang="esp">
+
 <head>
 	<?php include dirname( __FILE__ )."/clases/vista/base/meta.php"; ?>	
-</head>
+</head>	
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">	
+
 	<?php include dirname( __FILE__ )."/clases/vista/base/header.php"; ?>
-	<?php include dirname( __FILE__ )."/clases/vista/".$vista;?>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<br><br><br>
-	<?php include dirname( __FILE__ )."/clases/vista/base/footer.php"; ?>
+	
+	<div class="row content text-center">
+	<?php 
+		include dirname( __FILE__ )."/clases/vista/base/left-sidenav.php";
+		include dirname( __FILE__ )."/clases/vista/".$vista;
+		include dirname( __FILE__ )."/clases/vista/base/right-sidenav.php";
+	?>
+	</div>
+
+	<br><br><br>	
+	<?php include dirname( __FILE__ )."/clases/vista/base/footer.php"; ?>	
 </body>
 </html>

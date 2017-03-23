@@ -1,12 +1,5 @@
-<header>
-	<div class="jumbotron text-center Aclonica">
-		<h1>Master John</h1>
-		<h3>Fuente Online</h3>
-	</div>
-</header>
-
-<div class="container">
-
+<div class="row col-sm-8">
+	
 	<div class="carousel slide" data-ride="carousel" id="slider">
 
 		<ol class="carousel-indicators">
@@ -48,43 +41,50 @@
 
 	<br>
 
-	<div class="row" id="promociones">
+	<div id="promociones">
 
-		<hr><h2 class="text-center Aclonica">PROMOCIONES DE LA SEMANA</h2><hr>
+		<hr><h2 class=" Aclonica">PROMOCIONES DE LA SEMANA</h2><hr>
 
-		<div class="col-sm-6 col-md-4">			
+		<div class="col-sm-4 col-md-4">			
 			<div class="thumbnail">
 				<img src="img/p9.jpg" alt="Foto Sandwich" class="img-rounded">
 				<div class="caption">
 					<h3 class="text-info"><b>Campero Master John</b></h3>
 					<p><b>Deliciosa Carne Doble con Queso, Tocino y Salsa Barbeque</b></p><br>
-					<p class="text-center"><button class="btn btn-primary">La quiero!</button></p>
+					<p><button class="btn btn-primary">La quiero!</button></p>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-sm-6 col-md-4">			
+		<div class="col-sm-4 col-md-4">			
 			<div class="thumbnail">
 				<img src="img/p10.jpg" alt="Foto Hot-Dog" class="img-rounded">
 				<div class="caption">
 					<h3 class="text-warning"><b>Hot-Dog Master John</b></h3>
 					<p><b>Delicioso Hot-Dog Asado con Palta y Salsa Verde </b></p><br>
-					<p class="text-center"><button class="btn btn-warning">La quiero!</button></p>
+					<p><button class="btn btn-warning">La quiero!</button></p>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-sm-6 col-md-4">			
+		<div class="col-sm-4 col-md-4">			
 			<div class="thumbnail">
 				<img src="" alt="Foto Pizza" class="img-rounded">
 				<div class="caption">
 					<h3 class="text-danger"><b>Nombre Producto</b></h3>
 					<p><b>Reseña Producto</b></p><br>
-					<p class="text-center"><button class="btn btn-danger">La quiero!</button></p>
+					<p><button class="btn btn-danger">La quiero!</button></p>
 				</div>
 			</div>
 		</div>
 
 	</div>
-	
+
+
+
 </div>
+
+
+
+
+

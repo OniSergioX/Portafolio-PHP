@@ -9,12 +9,3 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aclonica">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-
-        <style>
-        	.carousel-inner > .item > img,
-        	.carousel-inner > .item > a > img {
-        		width: 90%;
-        		margin: auto;
-        	}
-        </style>
-

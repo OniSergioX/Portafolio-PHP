@@ -3,16 +3,42 @@ body{
 	background-color: #FFAA01;
 }
 
-/*.FondoImagen{
-	background-image: url("../img/banner.png");	
-	background-repeat: no-repeat;
-	width: 100%;
+footer{
+	position: fixed;
+	float: bottom;
+	bottom: 0px;
+	width:100%;
+	background-color: #101010;
+	color: white;
+	padding: 15px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 80%;
 	margin: auto;
-	
-}*/
+}
+
+.row.content {height: 900px}
+
+.sidenav {
+	padding-top: 20px;
+	background-color: #E5A709;
+	height: 100%;
+	border:1px solid black;
+}
+
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {height:auto;} 
+}
 
 .Aclonica{
 	font-family: "Aclonica";
 	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 

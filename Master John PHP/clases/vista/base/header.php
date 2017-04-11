@@ -1,3 +1,8 @@
+<?php
+require_once "clases/controlador/SessionController.php";
+$sesion = new SessionController();
+?>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -26,6 +31,23 @@
                     </li>
                 </ul>
                 
+         <?php  if ($sesion->esCliente()) { $usuario = $_SESSION["usuario"]; ?>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php?vista=registro"><span class="glyphicon glyphicon-user"></span> 
+                            <?php 
+                                $usuario->getNombre()."&nbsp;".
+                                $usuario->getApellidoPaterno()."&nbsp;".
+                                $usuario->getApellidoMaterno(); 
+                            ?>
+                        </a>
+                    </li>
+                </ul>
+
+        <?php   }
+                else{?>
+
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="index.php?vista=registro"><span class="glyphicon glyphicon-user"></span> Registro</a>
@@ -34,6 +56,8 @@
                         <a href="#" data-toggle="modal" data-target="#login-box"><span class="glyphicon glyphicon-log-in"></span> Acceso</a>
                     </li>
                 </ul>
+
+        <?php   }?>   
 
             </div>
             <!-- /.navbar-collapse -->

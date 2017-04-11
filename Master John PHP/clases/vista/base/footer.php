@@ -2,5 +2,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 <footer class="container-fluid text-center">
-	<p>Diseño de Aplicaciones para Internet<br/>Duoc UC Sede Padre Alonso de Ovalle</p>
+	<p>
+		<a href="#">Quienes Somos?</a>&nbsp;&nbsp;
+		<a href="#">Vision</a>&nbsp;&nbsp;
+		<a href="#">Mision</a>
+	</p>
 </footer>

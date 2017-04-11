@@ -19,13 +19,13 @@ if (isset($_GET["vista"])) {
 <body data-spy="scroll" data-target=".navbar" data-offset="50">	
 
 	<?php include dirname( __FILE__ )."/clases/vista/base/header.php"; ?>
-	
-	<div class="row content text-center">
-	<?php 
-		include dirname( __FILE__ )."/clases/vista/base/left-sidenav.php";
-		include dirname( __FILE__ )."/clases/vista/".$vista;
-		include dirname( __FILE__ )."/clases/vista/base/right-sidenav.php";
-	?>
+
+	<div class="row content text-center" id="centro">
+		<?php 
+			// include dirname( __FILE__ )."/clases/vista/base/left-sidenav.php";
+			include dirname( __FILE__ )."/clases/vista/".$vista;
+			// include dirname( __FILE__ )."/clases/vista/base/right-sidenav.php";
+		?>
 	</div>
 
 	<br><br><br>	

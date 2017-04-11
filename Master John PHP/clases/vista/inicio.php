@@ -1,4 +1,7 @@
-<div class="row col-sm-8">
+<?php  
+// la clase : row col-sm-8 se agregara al div principal, si es que se desea poner navegadores laterales!
+?>
+<div class="container"> 
 	
 	<div class="carousel slide" data-ride="carousel" id="slider">
 
@@ -49,8 +52,10 @@
 			<div class="thumbnail">
 				<img src="img/p9.jpg" alt="Foto Sandwich" class="img-rounded">
 				<div class="caption">
+					<h4 class="text-info"><b>Sandwich</b></h4><hr>
 					<h3 class="text-info"><b>Campero Master John</b></h3>
-					<p><b>Deliciosa Carne Doble con Queso, Tocino y Salsa Barbeque</b></p><br>
+					<p><b>Deliciosa Carne Doble Con Queso, Tocino y Salsa Barbeque</b></p>
+					<h3 class="precio"><b>$3.500</b></h3>
 					<p><button class="btn btn-primary">La quiero!</button></p>
 				</div>
 			</div>
@@ -60,8 +65,10 @@
 			<div class="thumbnail">
 				<img src="img/p10.jpg" alt="Foto Hot-Dog" class="img-rounded">
 				<div class="caption">
-					<h3 class="text-warning"><b>Hot-Dog Master John</b></h3>
-					<p><b>Delicioso Hot-Dog Asado con Palta y Salsa Verde </b></p><br>
+					<h4 class="text-warning"><b>Hot-Dog</b></h4><hr>
+					<h3 class="text-warning"><b>Cl&aacute;sico Master John</b></h3>
+					<p><b>Delicioso Hot-Dog Asado con Palta y Salsa Verde </b></p>
+					<h3 class="precio"><b>$2.500</b></h3>
 					<p><button class="btn btn-warning">La quiero!</button></p>
 				</div>
 			</div>
@@ -69,11 +76,13 @@
 
 		<div class="col-sm-4 col-md-4">			
 			<div class="thumbnail">
-				<img src="" alt="Foto Pizza" class="img-rounded">
+				<img src="img/p11.jpg" alt="Foto Vegetariano" class="img-rounded">
 				<div class="caption">
-					<h3 class="text-danger"><b>Nombre Producto</b></h3>
-					<p><b>Reseña Producto</b></p><br>
-					<p><button class="btn btn-danger">La quiero!</button></p>
+					<h4 class="text-success"><b>Vegetariano</b></h4><hr>
+					<h3 class="text-success"><b>Wrap Master John</b></h3>
+					<p><b>Deliciosa seleccion de vegetales envueltos en tortilla Master John</b></p>
+					<h3 class="precio"><b>$1.500</b></h3>
+					<p><button class="btn btn-success">La quiero!</button></p>
 				</div>
 			</div>
 		</div>

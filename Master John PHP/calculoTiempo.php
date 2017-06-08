@@ -1,8 +1,11 @@
 <?php  
 
-echo dirname( __FILE__ )."<br>";
+// echo bin2hex(random_bytes(20))."<br><br>";
 
-$fechaInicio = "31-03-2017 23:33:00";
+
+// echo dirname( __FILE__ )."<br>";
+
+$fechaInicio = "02-06-2017 22:29:00";
 
 echo "<pre>";
 

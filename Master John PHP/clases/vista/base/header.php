@@ -1,6 +1,12 @@
 <?php
 require_once "clases/controlador/SessionController.php";
 $sesion = new SessionController();
+// echo "<pre>";
+// var_dump($sesion);
+// echo "</pre>";
+if ($sesion->esCliente()) {
+    $sesion->expirarSesion();
+}
 ?>
 
     <!-- Navigation -->
@@ -50,7 +56,7 @@ $sesion = new SessionController();
 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.php?vista=registro"><span class="glyphicon glyphicon-user"></span> Registro</a>
+                        <a href="#" data-toggle="modal" data-target="#register-box"><span class="glyphicon glyphicon-user"></span> Registro</a>
                     </li>
                     <li>
                         <a href="#" data-toggle="modal" data-target="#login-box"><span class="glyphicon glyphicon-log-in"></span> Acceso</a>
@@ -67,6 +73,7 @@ $sesion = new SessionController();
 
     <?php
         include dirname( __FILE__ )."/login.php";
+        include dirname( __FILE__ )."/registro.php";
     ?> 
 
     <header>

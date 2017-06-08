@@ -1,26 +1,31 @@
 <?php
 require_once "../dao/Conexion.php";
 require_once "../dao/CuentaDao.php";
-require_once "SessionController.php";
+// require_once "SessionController.php";
 
 //BLOQUE PETICIONES GET. 
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
-	if (isset($_GET["rut"]) && isset($_GET["clave"])) {
+	if (isset($_GET["username"]) && isset($_GET["clave"])) {
 
-		$rut = trim($_GET["rut"]);
+		$username = trim($_GET["username"]);
 		$clave = trim($_GET["clave"]);
 
-		if ($rut === "" || $clave === "") {
+		if ($username === "" || $clave === "") {
 			echo "0";
 		}
 		else{
-
 			$conexion = Conexion::getConexion();
-			$cuentaDao = new CuentaDao();
-			$cuenta = new Cuenta(trim($_POST["rut"], "", trim($_POST["clave"]), ""));
+			$cuentaDao = new CuentaDao($conexion);
+			$cuenta = new Cuenta("",$username, $clave,"");
 			$cuentaDao = $cuentaDao->buscar($cuenta);
-			echo ($cuenta === "")? "1" : $cuentaDao ;			
+
+			if ($cuentaDao === "") {
+				echo "1";				
+			}
+			else{
+				print_r(json_encode($cuentaDao));
+			}			
 		}
 
 	}

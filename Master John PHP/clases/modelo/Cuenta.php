@@ -5,7 +5,7 @@ class Cuenta
 	
 	private $rut,$username,$password,$nivel;
 
-	function __construct($_rut,$_username$_password,$_nivel)
+	function __construct($_rut,$_username,$_password,$_nivel)
 	{
 		$this->rut = $_rut;
 		$this->username = $_username;

@@ -1,4 +1,11 @@
-<?php  
+<?php 
+$resultado = 1;
+
+echo "cantidad de elementos : ". count($resultado);
+
+exit();
+
+
 
 // echo bin2hex(random_bytes(20))."<br><br>";
 

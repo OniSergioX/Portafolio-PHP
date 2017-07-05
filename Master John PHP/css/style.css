@@ -113,3 +113,8 @@ legend.scheduler-border {
 	border-color: transparent;
 }
 
+.mensajeVacio{
+	font-family: Arial;
+	font-weight: bold;
+	color: #C63737;
+}

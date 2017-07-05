@@ -33,31 +33,11 @@ class DAO
 				default: $statement = $this->conexion->prepare(self::BUSCAR_COMUNAS); break;
 			}
 
-			// echo "<pre>";
-			// print_r($_registro);
-			// echo "</pre><br><br>";
-
-			$contador = 1;
+			$contador = 1; // RELACION DEL CONTADOR CON LOS MARCADORES ANONIMOS!
 			if (count($_registro) > 0) {
-				foreach ($_registro as $value) {
-					// echo $contador++." =>".$key." = ".$value."<br>";
-
-					if (gettype($value) === "integer") {
-						$statement->bindParam($contador++, $value, PDO::PARAM_INT);
-					}
-					else{
-						$statement->bindParam($contador++, $value, PDO::PARAM_STR);
-					
-					}
-
-					// $statement->bindParam($contador++, $value);
-					
+				foreach ($_registro as $key => $value) { 
+					$statement->bindValue($contador++, $value);					
 				}
-
-				// for ($i=0; $i < count($_registro); $i++) {
-				// 	echo ($i+1)." = ".$_registro[$i];
-				// 	$statement->bindParam($i+1, $_registro[$i]);
-				// }
 			}
 
 			$statement->execute();
@@ -70,7 +50,6 @@ class DAO
 
 
 	}
-
 
 	/**
 	*Metodo Para Cerrar El statement Existente y La conexion
@@ -89,12 +68,13 @@ class DAO
 // require_once "Conexion.php";
 // $conexion = Conexion::getConexionPDO();
 // $dao = new DAO($conexion);
+
 // $registro = array("usuario1",bin2hex(random_bytes(30)),"pass",12345678, "nom", "ap", "am", "dir", "email", 98765432, 82);
 
-// $resultado =  $dao->Procedimiento("CREAR_USUARIO", $registro);
+// $registro = array("username"=>"usuario1","salt"=>bin2hex(random_bytes(30)),"password"=>"pass","rut"=>12345678,"nombre"=>"nom","apellidoP"=>"ap","apellidoM"=>"am","direccion"=>"dir","e-mail"=>"email","telefono"=>98765432,"comuna"=>82);
 
 
 // echo "<pre>";
-// print_r($resultado);
+// print_r($dao->Procedimiento("CREAR_USUARIO", $registro));
 // echo "</pre>";
 ?>

@@ -1,8 +1,18 @@
-<?php  
+<?php 
+$resultado = 1;
 
-echo dirname( __FILE__ )."<br>";
+echo "cantidad de elementos : ". count($resultado);
 
-$fechaInicio = "31-03-2017 23:33:00";
+exit();
+
+
+
+// echo bin2hex(random_bytes(20))."<br><br>";
+
+
+// echo dirname( __FILE__ )."<br>";
+
+$fechaInicio = "02-06-2017 22:29:00";
 
 echo "<pre>";
 
